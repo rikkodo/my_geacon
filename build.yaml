@@ -19,4 +19,4 @@
 ---
 include:
   - board: bluemicro840_v1
-    shield: two_percent_milk rgbled_adapter
+    shield: te9no rgbled_adapter
