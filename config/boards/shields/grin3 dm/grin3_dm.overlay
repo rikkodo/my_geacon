@@ -1,4 +1,4 @@
-#include "grin3.dtsi"
+#include "grin3_dm.dtsi"
  
 &kscan0 {
     gpios
