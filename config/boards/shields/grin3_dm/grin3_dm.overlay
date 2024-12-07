@@ -14,13 +14,6 @@
 #define INPUT_REL_HWHEEL 0x06           /**< Relative horizontal wheel coordinate */
 #define INPUT_REL_MISC 0x09             /**< Relative misc coordinate */
 
-&shifter {
-    status = "okay";
-    #sck-pin = <4>;
-    #mosi-pin = <5>;
-    #miso-pin = <6>;
-    #cs-gpios = <&gpio0 5 GPIO_ACTIVE_LOW>;
-};
 
 &trackball {
     status = "okay";
