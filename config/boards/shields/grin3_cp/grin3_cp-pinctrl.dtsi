@@ -26,7 +26,7 @@
 };
 
 &xiao_spi {
-status = "okay";
+    status = "okay";
     cs-gpios = <&xiao_d 1 GPIO_ACTIVE_LOW>, <&xiao_d 5 GPIO_ACTIVE_LOW>;
 
     trackball: pd@0 {

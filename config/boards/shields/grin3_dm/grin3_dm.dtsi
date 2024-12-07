@@ -29,22 +29,4 @@
           , <&key_physical_attrs 100 100  326  318    1000   376   368>
           ;
     };
-    
-    default_transform: keymap_transform_0 {
-      compatible = "zmk,matrix-transform";
-      columns = <3>;
-      rows = <2>;
-
-      map = <
-        RC(0,3) RC(1,3) RC(2,3)
-        RC(0,4) RC(1,4) RC(2,4)
-        RC(3,0) RC(3,1) RC(3,2)
-        RC(4,0) RC(4,1) RC(4,2)
-        >;
-    };
- 
-    kscan0: kscan {
-        compatible = "zmk,kscan-gpio-matrix";
-        // define row-gpios with 12 elements and col-gpios with 8...
-    };
 };
