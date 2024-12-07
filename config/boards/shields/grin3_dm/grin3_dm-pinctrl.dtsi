@@ -37,7 +37,7 @@
         reg = <1>;
         label = "MCP23S17";
         #gpio-cells = <2>;
-        ngpios = <16
+        ngpios = <16>;
         int-gpios = <&xiao_d 5 GPIO_ACTIVE_LOW>;
     };
 };
