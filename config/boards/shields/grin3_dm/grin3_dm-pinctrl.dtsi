@@ -51,6 +51,7 @@
         gpio-controller;
         spi-max-frequency = <200000>;
         reg = <1>;
+        label = "MCP23S17";
         #gpio-cells = <2>;
         ngpios = <16>;
     };
