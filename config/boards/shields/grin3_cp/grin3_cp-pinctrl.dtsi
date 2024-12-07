@@ -53,5 +53,6 @@
         reg = <1>;
         #gpio-cells = <2>;
         ngpios = <16>;
+        int-gpios = <&xiao_d 5 GPIO_ACTIVE_LOW>;
     };
 };
