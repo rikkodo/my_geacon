@@ -31,7 +31,7 @@
                     <NRF_PSEL(SPIM_MISO, 0, 7)>;
             low-power-enable;
         };
-    ｝;
+    };
 };
 
 &xiao_spi {
