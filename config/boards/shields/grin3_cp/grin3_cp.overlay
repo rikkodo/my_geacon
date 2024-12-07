@@ -1,5 +1,5 @@
 #include "grin3_cp.dtsi"
-#include "grin3_dm-pinctrl.dtsi"
+#include "grin3_cp-pinctrl.dtsi"
  
 #define INPUT_EV_KEY 0x01               /**< Key event */
 #define INPUT_EV_REL 0x02               /**< Relative coordinate event */

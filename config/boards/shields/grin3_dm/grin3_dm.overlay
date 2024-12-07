@@ -16,12 +16,12 @@
 
 &kscan0 {
         col-gpios
-            = <&shifter 10 GPIO_ACTIVE_HIGH>
-            , <&shifter 11 GPIO_ACTIVE_HIGH>
+            = <&shifter 23 GPIO_ACTIVE_HIGH>
+            , <&shifter 24 GPIO_ACTIVE_HIGH>
             ;
         row-gpios
-            = <&shifter 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&shifter 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            = <&shifter 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&shifter 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
 };
 
