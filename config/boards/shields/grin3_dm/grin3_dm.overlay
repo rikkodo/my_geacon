@@ -16,6 +16,9 @@
 
 &shifter {
     status = "okay";
+    sck-pin = <4>;
+    mosi-pin = <5>;
+    miso-pin = <6>;
     #cs-gpios = <&gpio0 5 GPIO_ACTIVE_LOW>;
 };
 
