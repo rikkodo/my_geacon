@@ -25,9 +25,6 @@
 
 &shifter {
     status = "okay";
-    pinctrl-0 = <&spi0_default>;
-    pinctrl-1 = <&spi0_sleep>;
-    pinctrl-names = "default", "sleep";
     #cs-gpios = <&gpio0 5 GPIO_ACTIVE_LOW>;
 };
 
