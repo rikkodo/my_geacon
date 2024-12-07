@@ -16,10 +16,10 @@
 
 &kscan0 {
     gpios
-        = <&gpio 8 (GPIO_ACTIVE_HIGH)>
-        , <&gpio 9 (GPIO_ACTIVE_HIGH)>
-        , <&gpio 10 (GPIO_ACTIVE_HIGH)>
-        , <&gpio 11 (GPIO_ACTIVE_HIGH)>
+        = <&shifter 8 (GPIO_ACTIVE_HIGH)>
+        , <&shifter 9 (GPIO_ACTIVE_HIGH)>
+        , <&shifter 10 (GPIO_ACTIVE_HIGH)>
+        , <&shifter 11 (GPIO_ACTIVE_HIGH)>
         ;
 };
 
