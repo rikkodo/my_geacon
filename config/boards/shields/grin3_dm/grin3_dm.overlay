@@ -15,12 +15,14 @@
 #define INPUT_REL_MISC 0x09             /**< Relative misc coordinate */
 
 &kscan0 {
-    gpios
-        = <&shifter 8 (GPIO_ACTIVE_HIGH)>
-        , <&shifter 9 (GPIO_ACTIVE_HIGH)>
-        , <&shifter 10 (GPIO_ACTIVE_HIGH)>
-        , <&shifter 11 (GPIO_ACTIVE_HIGH)>
-        ;
+        col-gpios
+            = <&shifter 10 GPIO_ACTIVE_HIGH>
+            , <&shifter 11 GPIO_ACTIVE_HIGH>
+            ;
+        row-gpios
+            = <&shifter 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&shifter 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            ;
 };
 
 &shifter {
