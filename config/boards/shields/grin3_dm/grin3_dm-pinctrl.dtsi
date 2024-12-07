@@ -15,6 +15,23 @@
             low-power-enable;
         };
     };
+    
+    shifter_default: shifter_default {
+        group1 {
+            psels = <NRF_PSEL(SPIM_SCK, 0, 4)>,
+                    <NRF_PSEL(SPIM_MOSI, 0, 6)>,
+                    <NRF_PSEL(SPIM_MISO, 0, 7)>;
+        };
+    };
+
+    shifter_sleep: shifter_sleep {
+        group1 {
+            psels = <NRF_PSEL(SPIM_SCK, 0, 4)>,
+                    <NRF_PSEL(SPIM_MOSI, 0, 6)>,
+                    <NRF_PSEL(SPIM_MISO, 0, 7)>;
+            low-power-enable;
+        };
+    ｝;
 };
 
 &xiao_spi {
@@ -38,6 +55,8 @@
         label = "MCP23S17";
         #gpio-cells = <2>;
         ngpios = <16>;
+        pinctrl-0 = <&shifter_default>;
+        pinctrl-1 = <&shifter_sleep>;
         int-gpios = <&xiao_d 5 GPIO_ACTIVE_LOW>;
     };
 };
