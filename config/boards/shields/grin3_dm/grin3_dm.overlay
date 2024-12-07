@@ -14,17 +14,6 @@
 #define INPUT_REL_HWHEEL 0x06           /**< Relative horizontal wheel coordinate */
 #define INPUT_REL_MISC 0x09             /**< Relative misc coordinate */
 
-&kscan0 {
-        col-gpios
-            = <&shifter 23 GPIO_ACTIVE_HIGH>
-            , <&shifter 24 GPIO_ACTIVE_HIGH>
-            ;
-        row-gpios
-            = <&shifter 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&shifter 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            ;
-};
-
 &shifter {
     status = "okay";
     #cs-gpios = <&gpio0 5 GPIO_ACTIVE_LOW>;
@@ -37,4 +26,15 @@
     	evt-type = <INPUT_EV_REL>;
     	x-input-code = <INPUT_REL_X>;
     	y-input-code = <INPUT_REL_Y>;
+};
+
+&kscan0 {
+        col-gpios
+            = <&shifter 23 GPIO_ACTIVE_HIGH>
+            , <&shifter 24 GPIO_ACTIVE_HIGH>
+            ;
+        row-gpios
+            = <&shifter 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&shifter 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            ;
 };
