@@ -45,9 +45,9 @@
         irq-gpios = <&xiao_d 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
     };
 
-    shifter: mcp23s17@1 {
+    shifter: mcp23sxx@1 {
         status = "okay";
-        compatible = "microchip,mcp23s17";
+        compatible = "microchip,mcp23sxx";
         gpio-controller;
         spi-max-frequency = <200000>;
         reg = <1>;

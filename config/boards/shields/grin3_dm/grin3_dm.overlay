@@ -16,9 +16,9 @@
 
 &shifter {
     status = "okay";
-    sck-pin = <4>;
-    mosi-pin = <5>;
-    miso-pin = <6>;
+    #sck-pin = <4>;
+    #mosi-pin = <5>;
+    #miso-pin = <6>;
     #cs-gpios = <&gpio0 5 GPIO_ACTIVE_LOW>;
 };
 
@@ -33,11 +33,11 @@
 
 &kscan0 {
         col-gpios
-            = <&shifter 23 GPIO_ACTIVE_HIGH>
-            , <&shifter 24 GPIO_ACTIVE_HIGH>
+            = <&shifter 0 GPIO_ACTIVE_HIGH>
+            , <&shifter 1 GPIO_ACTIVE_HIGH>
             ;
         row-gpios
-            = <&shifter 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&shifter 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            = <&shifter 2 GPIO_ACTIVE_HIGH>
+            , <&shifter 3 GPIO_ACTIVE_HIGH>
             ;
 };
