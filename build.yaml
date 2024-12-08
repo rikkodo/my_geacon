@@ -1,11 +1,8 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: grin3 rgbled_adapter
-    snippet: studio-rpc-usb-uart zmk-usb-logging
-  - board: seeeduino_xiao_ble
     shield: grin3_dm rgbled_adapter
     snippet: studio-rpc-usb-uart zmk-usb-logging
   - board: seeeduino_xiao_ble
-    shield: grin3_cp rgbled_adapter
-    snippet: studio-rpc-usb-uart zmk-usb-logging
+    shield: Test_R
+    snippet: zmk-usb-logging

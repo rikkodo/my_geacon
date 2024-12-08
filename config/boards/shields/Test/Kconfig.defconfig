@@ -1,0 +1,33 @@
+if SHIELD_TEST_DONGLE
+
+config ZMK_KEYBOARD_NAME
+    default "Test_Dongle"
+
+config ZMK_SPLIT
+    default y
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_TEST_R
+
+config ZMK_KEYBOARD_NAME
+    default "Test_R"
+
+config ZMK_SPLIT
+    default y
+
+endif
+
+if SHIELD_TEST_L
+
+config ZMK_KEYBOARD_NAME
+    default "Test_L"
+
+config ZMK_SPLIT
+    default y
+
+endif
+
