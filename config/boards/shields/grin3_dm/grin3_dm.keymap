@@ -18,7 +18,7 @@
        default_layer {
            label = "Az123";
            bindings = <
-&kp GRAVE &kp N1    &kp N2     &kp N3
+&trans &trans    &trans     &trans
 &kp TAB   &kp Q     &kp W      &kp E
 &kp CAPS  &kp A     &kp S      &kp D
 &kp LSHFT &kp Z     &kp X      &kp C
