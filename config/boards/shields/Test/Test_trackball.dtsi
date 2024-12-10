@@ -15,7 +15,7 @@
             low-power-enable;
         };
     };
-};
+};3
 
 &uart0 {
 	status = "disabled";
