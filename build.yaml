@@ -4,5 +4,8 @@ include:
     shield: grin3_dm
     snippet: zmk-usb-logging
   - board: seeeduino_xiao_ble
+    shield: grin3_cp
+    snippet: zmk-usb-logging
+  - board: seeeduino_xiao_ble
     shield: Test_R
     snippet: zmk-usb-logging
