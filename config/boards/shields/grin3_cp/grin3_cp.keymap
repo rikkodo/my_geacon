@@ -18,7 +18,7 @@
        default_layer {
            label = "Az123";
            bindings = <
-&kp N1
+&kp N1 &kp N2 &kp N3 &kp N4
 >;
        };
    };
