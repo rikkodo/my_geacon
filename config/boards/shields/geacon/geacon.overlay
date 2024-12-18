@@ -1,5 +1,5 @@
 #include <dt-bindings/zmk/bt.h>
-#include <geacon-pinctrl.dtsi>
+#include <geacon_pinctrl.dtsi>
 #include <geacon.dtsi>
 
 &spi0 {
