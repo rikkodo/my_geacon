@@ -1,4 +1,6 @@
 #include <dt-bindings/zmk/bt.h>
+#include <input/processors.dsti>
+#include <dt-bindings/zmk/input_transform.h>
 #include "geacon_pinctrl.dtsi"
 #include "geacon.dtsi"
 
