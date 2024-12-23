@@ -1,6 +1,6 @@
-if SHIELD_GRIN3
+if SHIELD_GEACON
   config ZMK_KEYBOARD_NAME
-  default "grin3"
+  default "geacon"
 endif
 
 config SPI
