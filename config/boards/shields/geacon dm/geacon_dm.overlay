@@ -37,18 +37,29 @@
     };
 
     kscan0: kscan_0 {
-        compatible = "zmk,kscan-gpio-charlieplex";
-        interrupt-gpios = <&xiao_d 7 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        gpios
-            = <&shifter 0 (GPIO_ACTIVE_LOW)>
-            , <&shifter 1 (GPIO_ACTIVE_LOW)>
-            , <&shifter 2 (GPIO_ACTIVE_LOW)>
-            , <&shifter 3 (GPIO_ACTIVE_LOW)>
-            , <&shifter 4 (GPIO_ACTIVE_LOW)>
-            , <&shifter 5 (GPIO_ACTIVE_LOW)>
-            , <&shifter 6 (GPIO_ACTIVE_LOW)>
-            , <&shifter 7 (GPIO_ACTIVE_LOW)>
-            , <&shifter 8 (GPIO_ACTIVE_LOW)>
+        compatible = "zmk,kscan-gpio-matrix";
+        diode-direction = "col2row";
+        col-gpios
+            = <&shifter 0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&shifter 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&shifter 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&shifter 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&shifter 4 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&shifter 5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&shifter 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&shifter 7 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&shifter 8 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            ;
+        row-gpios
+            = <&shifter 9 (GPIO_ACTIVE_LOW)>
+            , <&shifter 10 (GPIO_ACTIVE_LOW)>
+            , <&shifter 11 (GPIO_ACTIVE_LOW)>
+            , <&shifter 12 (GPIO_ACTIVE_LOW)>
+            , <&shifter 13 (GPIO_ACTIVE_LOW)>
+            , <&shifter 14 (GPIO_ACTIVE_LOW)>
+            , <&shifter 15 (GPIO_ACTIVE_LOW)>
+            , <&shifter 16 (GPIO_ACTIVE_LOW)>
+            , <&shifter 17 (GPIO_ACTIVE_LOW)>
             ;
     };
 };
