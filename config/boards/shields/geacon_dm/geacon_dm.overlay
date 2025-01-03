@@ -50,11 +50,11 @@
             , <&shifter 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>
             ;
         row-gpios
-            = <&shifter 8 (GPIO_ACTIVE_LOW)>
-            , <&shifter 9 (GPIO_ACTIVE_LOW)>
-            , <&shifter 10 (GPIO_ACTIVE_LOW)>
-            , <&shifter 11 (GPIO_ACTIVE_LOW)>
-            , <&shifter 12 (GPIO_ACTIVE_LOW)>
+            = <&shifter 8 (GPIO_ACTIVE_HIGH)>
+            , <&shifter 9 (GPIO_ACTIVE_HIGH)>
+            , <&shifter 10 (GPIO_ACTIVE_HIGH)>
+            , <&shifter 11 (GPIO_ACTIVE_HIGH)>
+            , <&shifter 12 (GPIO_ACTIVE_HIGH)>
             ;
     };
 };
