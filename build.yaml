@@ -2,9 +2,9 @@
 include:
   - board: seeeduino_xiao_ble
     shield: grin3
-    snippet: zmk-usb-logging
+    snippet: zmk-usb-logging studio-rpc-usb-uart
   - board: seeeduino_xiao_ble
     shield: geacon rgbled_adapter
-    snippet: zmk-usb-logging
+    snippet: zmk-usb-logging studio-rpc-usb-uart
   - board: seeeduino_xiao_ble
     shield: settings_reset
