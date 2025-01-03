@@ -7,8 +7,4 @@ include:
     shield: geacon rgbled_adapter
     snippet: zmk-usb-logging
   - board: seeeduino_xiao_ble
-    shield: geacon_dm rgbled_adapter
-    snippet: zmk-usb-logging
-#  - board: seeeduino_xiao_ble
-#    shield: Test_R
-#    snippet: zmk-usb-logging
+    shield: settings_reset
