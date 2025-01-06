@@ -1,13 +1,13 @@
 ---
 include:
-  - board: seeeduino_xiao_ble
-    shield: grin3
-    snippet: zmk-usb-logging studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
-  - board: seeeduino_xiao_ble
-    shield: geacon_dm
-    snippet: zmk-usb-logging studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
+#  - board: seeeduino_xiao_ble
+#    shield: grin3
+#    snippet: zmk-usb-logging studio-rpc-usb-uart
+#    cmake-args: -DCONFIG_ZMK_STUDIO=y
+#  - board: seeeduino_xiao_ble
+#    shield: geacon_dm
+#    snippet: zmk-usb-logging studio-rpc-usb-uart
+#    cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: seeeduino_xiao_ble
     shield: geacon rgbled_adapter
     snippet: zmk-usb-logging studio-rpc-usb-uart
