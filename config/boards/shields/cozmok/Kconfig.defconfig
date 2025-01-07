@@ -1,0 +1,4 @@
+if SHIELD_COZMOK
+  config ZMK_KEYBOARD_NAME
+  default "cozmok"
+endif
