@@ -64,9 +64,9 @@
            label = "MOUSE";
            bindings = <
 &trans    &trans    &trans     &trans     &trans     &trans       &trans    &trans     &trans     &trans     &trans    &trans      &trans      &trans &trans
-&trans    &kp PG_UP &kp UP     &kp PG_DN  &kp HOME   &trans       &trans    &trans     &trans     &trans     &trans    &trans      &trans          &trans
-&kp CAPS  &kp LEFT  &kp DOWN   &kp RIGHT  &kp END    &trans       &trans    &trans     &trans     &trans     &trans    &trans      &trans
-&trans    &kp BKSP  &kp DEL    &trans     &trans     &trans       &trans    &trans     &trans     &mkp MB1   &mkp MB3  &mkp MB2                    &trans
+&trans    &trans    &trans     &trans     &trans     &trans       &trans    &trans     &trans     &trans     &trans    &trans      &trans          &trans
+&trans    &trans    &trans     &trans     &trans     &trans       &trans    &trans     &trans     &trans     &trans    &trans      &trans
+&trans    &trans    &trans     &trans     &trans     &trans       &trans    &trans     &trans     &mkp MB1   &mkp MB3  &mkp MB2                    &trans
 &kp LCTL   &kp LGUI   &kp LALT         &kp ENTER     &kp ENTER                                                                          &trans   &trans   &trans
 >;
        };
@@ -76,9 +76,9 @@
            label = "SCROLL";
            bindings = <
 &trans    &trans    &trans     &trans     &trans     &trans       &trans    &trans     &trans     &trans     &trans    &trans      &trans      &trans &trans
-&trans    &kp PG_UP &kp UP     &kp PG_DN  &kp HOME   &trans       &trans    &trans     &trans     &trans     &trans    &trans      &trans          &trans
-&kp CAPS  &kp LEFT  &kp DOWN   &kp RIGHT  &kp END    &trans       &trans    &trans     &trans     &trans     &trans    &trans      &trans
-&trans    &kp BKSP  &kp DEL    &trans     &trans     &trans       &trans    &trans     &trans     &mkp MB1   &mkp MB3  &mkp MB2                    &trans
+&trans    &trans    &trans     &trans     &trans     &trans       &trans    &trans     &trans     &trans     &trans    &trans      &trans          &trans
+&trans    &trans    &trans     &trans     &trans     &trans       &trans    &trans     &trans     &trans     &trans    &trans      &trans
+&trans    &trans    &trans     &trans     &trans     &trans       &trans    &trans     &trans     &mkp MB1   &mkp MB3  &mkp MB2                    &trans
 &kp LCTL   &kp LGUI   &kp LALT         &kp ENTER     &kp ENTER                                                                          &trans   &trans   &trans
 >;
        };
