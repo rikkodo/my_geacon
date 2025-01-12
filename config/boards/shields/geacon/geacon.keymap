@@ -67,7 +67,7 @@
 &trans    &trans    &trans     &trans     &trans     &trans       &trans    &trans     &trans     &trans     &trans    &trans      &trans          &trans
 &trans    &trans    &trans     &trans     &trans     &trans       &trans    &trans     &trans     &trans     &trans    &trans      &trans
 &trans    &trans    &trans     &trans     &trans     &trans       &trans    &trans     &trans     &mkp MB1   &mkp MB3  &mkp MB2                    &trans
-&kp LCTL   &kp LGUI   &kp LALT         &kp ENTER     &kp ENTER                                                                          &trans   &trans   &trans
+&trans    &trans    &trans                &trans     &trans                                                                               &trans   &trans   &trans
 >;
        };
 
@@ -79,7 +79,7 @@
 &trans    &trans    &trans     &trans     &trans     &trans       &trans    &trans     &trans     &trans     &trans    &trans      &trans          &trans
 &trans    &trans    &trans     &trans     &trans     &trans       &trans    &trans     &trans     &trans     &trans    &trans      &trans
 &trans    &trans    &trans     &trans     &trans     &trans       &trans    &trans     &trans     &mkp MB1   &mkp MB3  &mkp MB2                    &trans
-&kp LCTL   &kp LGUI   &kp LALT         &kp ENTER     &kp ENTER                                                                          &trans   &trans   &trans
+&trans    &trans    &trans                &trans     &trans                                                                               &trans   &trans   &trans
 >;
        };
 
