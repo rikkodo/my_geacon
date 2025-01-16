@@ -42,6 +42,12 @@
             quick-tap-ms = <0>;
             bindings = <&tog>, <&kp>;
         };
+        mod2: mod2 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N2>, <&kp LBKT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
         mod6: mod6 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
