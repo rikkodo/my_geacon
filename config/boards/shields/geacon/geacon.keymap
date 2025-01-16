@@ -127,7 +127,7 @@
            label = "JIS";
            bindings = <
 &toJIS 1 GRAVE &kp N1    &kp N2     &kp N3     &kp N4     &kp N5       &mod6     &mod7      &mod8      &mod9      &mod0     &modMINUS   &modEQUAL       &kp BKSP
-&kp a     &kp Q     &kp W      &kp E      &kp R      &kp T        &kp Y     &kp U      &kp I      &kp O      &kp P     &modLBKT    &modRBKT        &lt 5 BSLH
+&kp TAB   &kp Q     &kp W      &kp E      &kp R      &kp T        &kp Y     &kp U      &kp I      &kp O      &kp P     &modLBKT    &modRBKT        &lt 5 BSLH
 &kp CAPS  &kp A     &kp S      &kp D      &kp F      &kp G        &kp H     &kp J      &kp K      &kp L      &modSEMI  &modSQT                     &kp ENTER
 &kp LSHFT &kp Z     &kp X      &kp C      &kp V      &kp B        &kp N     &kp M      &kp COMMA  &kp DOT    &kp FSLH  &kp RSHFT                   &kp UP
 &mt LCTL ESC  &kp LGUI   &kp LALT      &kp SPACE     &lt 2 SPACE                                                                          &kp LEFT &kp DOWN &kp RIGHT
