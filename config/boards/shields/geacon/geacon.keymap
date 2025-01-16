@@ -45,13 +45,13 @@
         mod6: mod6 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp N6>, <&kp CARET>;
+            bindings = <&kp N6>, <&kp EQUAL>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         mod7: mod7 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp N7>, <&kp AMPS>;
+            bindings = <&kp N7>, <&kp LS(N7)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         mod8: mod8 {
