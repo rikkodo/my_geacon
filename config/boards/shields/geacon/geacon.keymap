@@ -4,9 +4,9 @@
 #include <dt-bindings/zmk/bt.h>
 #include <behaviors/rgbled_widget.dtsi>
 
-#define MOUSE 2
-#define SCROLL 3
-#define BT 4
+#define MOUSE 3
+#define SCROLL 4
+#define BT 5
 
 &mt {
    flavor = "tap-preferred";
@@ -44,31 +44,31 @@
         mod6: mod6 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp 6>, <&kp CARET>;
+            bindings = <&kp N6>, <&kp CARET>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         mod7: mod7 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp 7>, <&kp AMPS>;
+            bindings = <&kp N7>, <&kp AMPS>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         mod8: mod8 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp 8>, <&kp ASTRK>;
+            bindings = <&kp N8>, <&kp ASTRK>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         mod9: mod9 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp 9>, <&kp LPAR>;
+            bindings = <&kp N9>, <&kp LPAR>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         mod0: mod0 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp 0>, <&kp RPAR>;
+            bindings = <&kp N0>, <&kp RPAR>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         modMINUS: modMINUS {
@@ -115,10 +115,10 @@
            label = "Az123";
            bindings = <
 &toJIS 1 GRAVE &kp N1    &kp N2     &kp N3     &kp N4     &kp N5       &kp N6    &kp N7     &kp N8     &kp N9     &kp N0    &kp MINUS   &kp EQUAL       &kp BKSP
-&kp TAB   &kp Q     &kp W      &kp E      &kp R      &kp T        &kp Y     &kp U      &kp I      &kp O      &kp P     &kp LBKT    &kp RBKT        &lt 4 BSLH
+&kp TAB   &kp Q     &kp W      &kp E      &kp R      &kp T        &kp Y     &kp U      &kp I      &kp O      &kp P     &kp LBKT    &kp RBKT        &lt 5 BSLH
 &kp CAPS  &kp A     &kp S      &kp D      &kp F      &kp G        &kp H     &kp J      &kp K      &kp L      &kp SEMI  &kp SQT                     &kp ENTER
 &kp LSHFT &kp Z     &kp X      &kp C      &kp V      &kp B        &kp N     &kp M      &kp COMMA  &kp DOT    &kp FSLH  &kp RSHFT                   &kp UP
-&mt LCTL ESC  &kp LGUI   &kp LALT      &kp SPACE     &lt 1 SPACE                                                                          &kp LEFT &kp DOWN &kp RIGHT
+&mt LCTL ESC  &kp LGUI   &kp LALT      &kp SPACE     &lt 2 SPACE                                                                          &kp LEFT &kp DOWN &kp RIGHT
 >;
        };
 
@@ -126,10 +126,10 @@
            label = "JIS";
            bindings = <
 &toJIS 1 GRAVE &kp N1    &kp N2     &kp N3     &kp N4     &kp N5       &mod6     &mod7      &mod8      &mod9      &mod0     &modMINUS   &modEQUAL       &kp BKSP
-&kp TAB   &kp Q     &kp W      &kp E      &kp R      &kp T        &kp Y     &kp U      &kp I      &kp O      &kp P     &modLBKT    &modRBKT        &lt 4 BSLH
+&kp TAB   &kp Q     &kp W      &kp E      &kp R      &kp T        &kp Y     &kp U      &kp I      &kp O      &kp P     &modLBKT    &modRBKT        &lt 5 BSLH
 &kp CAPS  &kp A     &kp S      &kp D      &kp F      &kp G        &kp H     &kp J      &kp K      &kp L      &modSEMI  &modSQT                     &kp ENTER
 &kp LSHFT &kp Z     &kp X      &kp C      &kp V      &kp B        &kp N     &kp M      &kp COMMA  &kp DOT    &kp FSLH  &kp RSHFT                   &kp UP
-&mt LCTL ESC  &kp LGUI   &kp LALT      &kp SPACE     &lt 1 SPACE                                                                          &kp LEFT &kp DOWN &kp RIGHT
+&mt LCTL ESC  &kp LGUI   &kp LALT      &kp SPACE     &lt 2 SPACE                                                                          &kp LEFT &kp DOWN &kp RIGHT
 >;
        };
 
