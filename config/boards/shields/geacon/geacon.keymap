@@ -42,73 +42,73 @@
             quick-tap-ms = <0>;
             bindings = <&tog>, <&kp>;
         };
-        mod2: mod2 {
+        mo2: mo2 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp N2>, <&kp LBKT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        mod6: mod6 {
+        mo6: mo6 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp N6>, <&kp EQUAL>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        mod7: mod7 {
+        mo7: mo7 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp N7>, <&kp LS(N6)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        mod8: mod8 {
+        mo8: mo8 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp N8>, <&kp LS(N6)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        mod9: mod9 {
+        mo9: mo9 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp N9>, <&kp LS(N8)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        mod0: mod0 {
+        mo0: mo0 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp N0>, <&kp LS(N9)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        modMINUS: modMINUS {
+        moMINUS: moMINUS {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp MINUS>, <&kp LS(INT_RO)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        modEQUAL: modEQUAL {
+        moEQUAL: moEQUAL {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp EQUAL>, <&kp LS(SEMI)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        modLBKT: modLBKT {
+        moLBKT: moLBKT {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp AT>, <&kp LS(RBRC)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        modRBKT: modRBKT {
+        moRBKT: moRBKT {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp LBKT>, <&kp LS(BSLH)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        modSEMI: modSEMI {
+        moSEMI: moSEMI {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp SEMI>, <&kp SQT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        modSQT: modSQT {
+        moSQT: moSQT {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp COLON>, <&kp LS(N2)>;
@@ -121,33 +121,33 @@
         default_layer {
             label = "Az123";
             bindings = <
-&toJIS 1 GRAVE &kp N1    &kp N2     &kp N3     &kp N4     &kp N5       &kp N6    &kp N7     &kp N8     &kp N9     &kp N0    &kp MINUS   &kp EQUAL       &kp BKSP
-&kp TAB        &kp Q     &kp W      &kp E      &kp R      &kp T        &kp Y     &kp U      &kp I      &kp O      &kp P     &kp LBKT    &kp RBKT        &lt 5 BSLH
-&kp CAPS       &kp A     &kp S      &kp D      &kp F      &kp G        &kp H     &kp J      &kp K      &kp L      &kp SEMI  &kp SQT                     &kp ENTER
-&kp LSHFT      &kp Z     &kp X      &kp C      &kp V      &kp B        &kp N     &kp M      &kp COMMA  &kp DOT    &kp FSLH  &kp RSHFT                   &kp UP
-&mt LCTL ESC   &kp LGUI  &kp LALT   &kp SPACE  &lt 2 SPACE                                                                                     &kp LEFT &kp DOWN &kp RIGHT
+&toJIS 1 GRAVE &kp N1    &kp N2     &kp N3     &kp N4     &kp N5       &kp N6    &kp N7     &kp N8     &kp N9     &kp N0    &kp MINUS  &kp EQUAL      &kp BKSP
+&kp TAB        &kp Q     &kp W      &kp E      &kp R      &kp T        &kp Y     &kp U      &kp I      &kp O      &kp P     &kp LBKT   &kp RBKT       &lt 5 BSLH
+&kp CAPS       &kp A     &kp S      &kp D      &kp F      &kp G        &kp H     &kp J      &kp K      &kp L      &kp SEMI  &kp SQT                   &kp ENTER
+&kp LSHFT      &kp Z     &kp X      &kp C      &kp V      &kp B        &kp N     &kp M      &kp COMMA  &kp DOT    &kp FSLH  &kp RSHFT                 &kp UP
+&mt LCTL ESC   &kp LGUI  &kp LALT   &kp SPACE  &lt 2 SPACE                                                                                   &kp LEFT &kp DOWN &kp RIGHT
 >;
        };
 
         jis_layer {
            label = "JIS";
            bindings = <
-&toJIS 1 GRAVE &kp N1    &mod2      &kp N3     &kp N4     &kp N5       &mod6     &mod7      &mod8      &mod9      &mod0     &modMINUS   &modEQUAL       &kp BKSP
-&kp TAB        &kp Q     &kp W      &kp E      &kp R      &kp T        &kp Y     &kp U      &kp I      &kp O      &kp P     &modLBKT    &modRBKT        &lt 5 BSLH
-&kp CAPS       &kp A     &kp S      &kp D      &kp F      &kp G        &kp H     &kp J      &kp K      &kp L      &modSEMI  &modSQT                     &kp ENTER
-&kp LSHFT      &kp Z     &kp X      &kp C      &kp V      &kp B        &kp N     &kp M      &kp COMMA  &kp DOT    &kp FSLH  &kp RSHFT                   &kp UP
-&mt LCTL ESC   &kp LGUI  &kp LALT   &kp SPACE  &lt 2 SPACE                                                                                     &kp LEFT &kp DOWN &kp RIGHT
+&toJIS 1 GRAVE &kp N1    &mo2       &kp N3     &kp N4     &kp N5       &mo6      &mo7       &mo8       &mo9       &mo0      &moMINUS   &moEQUAL        &kp BKSP
+&kp TAB        &kp Q     &kp W      &kp E      &kp R      &kp T        &kp Y     &kp U      &kp I      &kp O      &kp P     &moLBKT    &moRBKT         &lt 5 BSLH
+&kp CAPS       &kp A     &kp S      &kp D      &kp F      &kp G        &kp H     &kp J      &kp K      &kp L      &moSEMI   &moSQT                     &kp ENTER
+&kp LSHFT      &kp Z     &kp X      &kp C      &kp V      &kp B        &kp N     &kp M      &kp COMMA  &kp DOT    &kp FSLH  &kp RSHFT                  &kp UP
+&mt LCTL ESC   &kp LGUI  &kp LALT   &kp SPACE  &lt 2 SPACE                                                                                    &kp LEFT &kp DOWN &kp RIGHT
 >;
        };
 
        function_layer {
            label = "Func";
            bindings = <
-&trans        &kp F1    &kp F2     &kp F3     &kp F4     &kp F5       &kp F6    &kp F7     &kp F8     &kp F9     &kp F10   &kp F11     &kp F12         &trans
-&trans        &kp PG_UP &kp UP     &kp PG_DN  &kp HOME   &trans       &trans    &trans     &trans     &trans     &trans    &trans      &trans          &kp PSCRN
-&trans        &kp LEFT  &kp DOWN   &kp RIGHT  &kp END    &trans       &trans    &trans     &trans     &trans     &trans    &trans                      &trans
-&trans        &kp BKSP  &kp DEL    &trans     &trans     &trans       &trans    &trans     &trans     &trans     &trans    &trans                      &trans
-&trans        &trans    &kp LALT   &kp ENTER  &kp ENTER                                                                                       &trans   &trans   &trans
+&trans        &kp F1     &kp F2     &kp F3     &kp F4     &kp F5       &kp F6    &kp F7     &kp F8     &kp F9     &kp F10   &kp F11    &kp F12         &trans
+&trans        &kp PG_UP  &kp UP     &kp PG_DN  &kp HOME   &trans       &trans    &trans     &trans     &trans     &trans    &trans     &trans          &kp PSCRN
+&trans        &kp LEFT   &kp DOWN   &kp RIGHT  &kp END    &trans       &trans    &trans     &trans     &trans     &trans    &trans                     &trans
+&trans        &kp BKSP   &kp DEL    &trans     &trans     &trans       &trans    &trans     &trans     &trans     &trans    &trans                     &trans
+&trans        &trans     &kp LALT   &kp ENTER  &kp ENTER                                                                                      &trans   &trans   &trans
 >;
        };
 
@@ -155,11 +155,11 @@
            display-name = "MOUSE";    
            label = "MOUSE";
            bindings = <
-&trans    &trans    &trans     &trans     &trans     &trans       &trans    &trans     &trans     &trans     &trans    &trans      &trans          &trans
-&trans    &trans    &trans     &trans     &trans     &trans       &trans    &trans     &trans     &trans     &trans    &trans      &trans          &trans
-&trans    &trans    &trans     &trans     &trans     &trans       &trans    &trans     &trans     &trans     &trans    &trans      &trans
-&trans    &trans    &trans     &trans     &trans     &trans       &trans    &trans     &trans     &mkp MB1   &mkp MB3  &mkp MB2                    &trans
-&trans    &trans    &trans                &trans     &trans                                                                               &trans   &trans   &trans
+&trans        &trans     &trans     &trans     &trans     &trans       &trans    &trans     &trans     &trans     &trans    &trans     &trans          &trans
+&trans        &trans     &trans     &trans     &trans     &trans       &trans    &trans     &trans     &trans     &trans    &trans     &trans          &trans
+&trans        &trans     &trans     &trans     &trans     &trans       &trans    &trans     &trans     &trans     &trans    &trans                     &trans
+&trans        &trans     &trans     &trans     &trans     &trans       &trans    &trans     &trans     &mkp MB1   &mkp MB3  &mkp MB2                   &trans
+&trans        &trans     &trans                &trans     &trans                                                                              &trans   &trans   &trans
 >;
        };
 
@@ -167,11 +167,11 @@
            display-name = "SCROLL";    
            label = "SCROLL";
            bindings = <
-&trans    &trans    &trans     &trans     &trans     &trans       &trans    &trans     &trans     &trans     &trans    &trans      &trans          &trans
-&trans    &trans    &trans     &trans     &trans     &trans       &trans    &trans     &trans     &trans     &trans    &trans      &trans          &trans
-&trans    &trans    &trans     &trans     &trans     &trans       &trans    &trans     &trans     &trans     &trans    &trans      &trans
-&trans    &trans    &trans     &trans     &trans     &trans       &trans    &trans     &trans     &mkp MB1   &mkp MB3  &mkp MB2                    &trans
-&trans    &trans    &trans                &trans     &trans                                                                               &trans   &trans   &trans
+&trans        &trans     &trans     &trans     &trans     &trans       &trans    &trans     &trans     &trans     &trans    &trans     &trans          &trans
+&trans        &trans     &trans     &trans     &trans     &trans       &trans    &trans     &trans     &trans     &trans    &trans     &trans          &trans
+&trans        &trans     &trans     &trans     &trans     &trans       &trans    &trans     &trans     &trans     &trans    &trans                     &trans
+&trans        &trans     &trans     &trans     &trans     &trans       &trans    &trans     &trans     &mkp MB1   &mkp MB3  &mkp MB2                   &trans
+&trans        &trans     &trans                &trans     &trans                                                                              &trans   &trans   &trans
 >;
        };
 
@@ -179,7 +179,7 @@
            display-name = "BT";    
            label = "BT";
            bindings = <
-&bt BT_CLR     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans &trans
+&bt BT_CLR     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans
 &bt BT_CLR_ALL &trans       &trans       &trans       &trans       &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans              &trans
 &trans         &trans       &trans       &trans       &trans       &trans        &trans  &trans  &trans  &trans  &trans  &trans                      &trans
 &trans         &trans       &trans       &trans       &trans       &trans        &trans  &trans  &trans  &trans  &trans  &trans                      &trans
