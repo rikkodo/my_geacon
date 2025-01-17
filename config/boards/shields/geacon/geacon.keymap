@@ -51,7 +51,7 @@
         mod6: mod6 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp N6>, <&kp EQUAL>;
+            bindings = <&kp N6>, <&kp N6>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         mod7: mod7 {
@@ -63,25 +63,25 @@
         mod8: mod8 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp N8>, <&kp ASTRK>;
+            bindings = <&kp N8>, <&kp INT_RO>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         mod9: mod9 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp N9>, <&kp LPAR>;
+            bindings = <&kp N9>, <&kp SEMI>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         mod0: mod0 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp N0>, <&kp RPAR>;
+            bindings = <&kp N0>, <&kp EQUAL>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         modMINUS: modMINUS {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp MINUS>, <&kp UNDER>;
+            bindings = <&kp MINUS>, <&kp INT_YEN>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         modEQUAL: modEQUAL {
