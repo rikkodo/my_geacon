@@ -51,7 +51,7 @@
         mo6: mo6 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp N6>, <&kp MINUS>;
+            bindings = <&kp N6>, <&kp EQUAL>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         mo7: mo7 {
@@ -87,7 +87,7 @@
         moEQUAL: moEQUAL {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp LS(INT_RO)>, <&kp COLON>;
+            bindings = <&kp LS(MINUS)>, <&kp COLON>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         moLBKT: moLBKT {
