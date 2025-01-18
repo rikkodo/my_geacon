@@ -93,13 +93,13 @@
         moLBKT: moLBKT {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp AT>, <&kp LS(RBRC)>;
+            bindings = <&kp RBKT>, <&kp LS(RBRC)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         moRBKT: moRBKT {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp RBKT>, <&kp LS(BSLH)>;
+            bindings = <&kp BSLH>, <&kp LS(BSLH)>;
         };
         moSEMI: moSEMI {
             compatible = "zmk,behavior-mod-morph";
