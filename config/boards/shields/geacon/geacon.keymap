@@ -87,7 +87,7 @@
         moEQUAL: moEQUAL {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp LS(INT_RO)>, <&kp <&kp LS(N2)>;
+            bindings = <&kp LS(INT_RO)>, <&kp LS(N2)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         moLBKT: moLBKT {
