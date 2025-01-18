@@ -51,7 +51,7 @@
         mo6: mo6 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp N6>, <&kp LS(EQUAL)>;
+            bindings = <&kp N6>, <&kp MINUS>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         mo7: mo7 {
@@ -63,7 +63,7 @@
         mo8: mo8 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp N8>, <&kp LS(N6)>;
+            bindings = <&kp N8>, <&kp LS(SQT)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         mo9: mo9 {
@@ -87,7 +87,7 @@
         moEQUAL: moEQUAL {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp LS(INT_RO)>, <&kp LS(N2)>;
+            bindings = <&kp LS(INT_RO)>, <&kp COLON>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         moLBKT: moLBKT {
@@ -99,8 +99,7 @@
         moRBKT: moRBKT {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp RBRC>, <&kp LS(BSLH)>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&kp RBKT>, <&kp LS(BSLH)>;
         };
         moSEMI: moSEMI {
             compatible = "zmk,behavior-mod-morph";
@@ -111,7 +110,7 @@
         moSQT: moSQT {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp COLON>, <&kp LS(N2)>;
+            bindings = <&kp LS(N7)>, <&kp LS(N2)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     }; 
