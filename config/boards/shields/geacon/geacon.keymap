@@ -45,13 +45,13 @@
         mo2: mo2 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp N2>, <&kp LBKT>;
+            bindings = <&kp N2>, <&kp LBKT>;.
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         mo6: mo6 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp N6>, <&kp EQUAL>;
+            bindings = <&kp N6>, <&kp LS(EQUAL)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         mo7: mo7 {
@@ -87,7 +87,7 @@
         moEQUAL: moEQUAL {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp EQUAL>, <&kp LS(SEMI)>;
+            bindings = <&kp LS(INT_RO)>, <&kp <&kp LS(N2)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         moLBKT: moLBKT {
@@ -99,7 +99,7 @@
         moRBKT: moRBKT {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp LBKT>, <&kp LS(BSLH)>;
+            bindings = <&kp RBRC>, <&kp LS(BSLH)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         moSEMI: moSEMI {
