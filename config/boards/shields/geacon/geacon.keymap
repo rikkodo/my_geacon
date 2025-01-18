@@ -100,6 +100,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp BSLH>, <&kp LS(BSLH)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         moSEMI: moSEMI {
             compatible = "zmk,behavior-mod-morph";
