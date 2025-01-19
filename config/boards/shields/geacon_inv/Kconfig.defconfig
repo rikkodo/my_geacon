@@ -1,6 +1,6 @@
 if SHIELD_GEACON_INV
   config ZMK_KEYBOARD_NAME
-  default "geacon"
+  default "geacon_inv"
 endif
 
 config SPI
