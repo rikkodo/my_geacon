@@ -114,6 +114,12 @@
             bindings = <&kp LS(N7)>, <&kp LS(N2)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+        moGRAVE: moGRAVE {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE>, <&kp LS(EQUAL)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     }; 
  
    keymap {
