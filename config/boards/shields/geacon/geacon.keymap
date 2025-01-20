@@ -117,7 +117,7 @@
         moGRAVE: moGRAVE {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp GRAVE>, <&kp LS(EQUAL)>;
+            bindings = <&kp LS(LBRC)>, <&kp LS(EQUAL)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     }; 
