@@ -8,6 +8,8 @@ manifest:
       url-base: https://github.com/caksoylar
     - name: badjeff
       url-base: https://github.com/badjeff
+    - name: kumamuk-git
+      url-base: https://github.com/kumamuk-git
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -16,8 +18,11 @@ manifest:
     - name: zmk-rgbled-widget
       remote: caksoylar
       revision: main
+#    - name: zmk-pmw3610-driver
+#      remote: badjeff
+#      revision: main
     - name: zmk-pmw3610-driver
-      remote: badjeff
+      remote: kumamuk-git
       revision: main
   self:
     path: config
