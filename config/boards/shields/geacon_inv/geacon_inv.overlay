@@ -16,10 +16,12 @@
         status = "okay";
         compatible = "pixart,pmw3610";
         reg = <0>;
+  	    cpi = <600>;
         spi-max-frequency = <2000000>;
+        evt-type = <INPUT_EV_REL>;
+        x-input-code = <INPUT_REL_X>;
+        y-input-code = <INPUT_REL_Y>;
         irq-gpios = <&xiao_d 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        automouse-layer = <3>;
-        scroll-layers = <4>;
     };
 
     shifter: mcp23sxx@1 {
@@ -59,8 +61,9 @@
     device = <&trackball>;
     input-processors = <&zip_temp_layer 3 2000>;
     scroll {
-        layers = <2>;
-        input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 1 16>, <&zip_xy_to_scroll_mapper>;
+      layers = <2>;
+      input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 1 16>, <&zip_xy_to_scroll_mapper>;
     };
+
   };
 };
