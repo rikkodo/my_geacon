@@ -23,7 +23,7 @@
     };
 
     shifter: mcp23sxx@1 {
-        status = "okay";
+        status = "disabled";
         compatible = "microchip,mcp23sxx";
         gpio-controller;
         spi-max-frequency = <2000000>;
