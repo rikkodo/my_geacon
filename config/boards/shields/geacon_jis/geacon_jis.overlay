@@ -16,8 +16,8 @@
         status = "okay";
         compatible = "pixart,pmw3610";
         reg = <0>;
-	    cpi = <600>;
-        spi-max-frequency = <2000000>;
+  	    cpi = <600>;
+        spi-max-frequency = <1000000>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
@@ -38,7 +38,7 @@
 
     kscan0: kscan_0 {
         compatible = "zmk,kscan-gpio-charlieplex";
-        interrupt-gpios = <&xiao_d 7 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        interrupt-gpios = <&xiao_d 7 (GPIO_ACTIVE_LOW)>;
         gpios
             = <&shifter 0 (GPIO_ACTIVE_LOW)>
             , <&shifter 1 (GPIO_ACTIVE_LOW)>
@@ -59,10 +59,10 @@
     status = "okay";
     compatible = "zmk,input-listener";
     device = <&trackball>;
-    input-processors = <&zip_temp_layer 2 700>;
+    input-processors = <&zip_temp_layer 3 1000>;
     scroll {
-        layers = <1>;
-        input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 1 16>, <&zip_xy_to_scroll_mapper>;
+      layers = <2>;
+      input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 1 16>, <&zip_xy_to_scroll_mapper>;
     };
   };
 };
