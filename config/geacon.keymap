@@ -125,7 +125,6 @@
    keymap {
         compatible = "zmk,keymap";
         default_layer {
-            label = "Az123";
             bindings = <
 &kp CAPS       &kp N1    &kp N2     &kp N3     &kp N4     &kp N5       &kp N6    &kp N7     &kp N8     &kp N9     &kp N0    &kp MINUS  &kp EQUAL      &kp BKSP
 &toJIS 1 TAB   &kp Q     &kp W      &kp E      &kp R      &kp T        &kp Y     &kp U      &kp I      &kp O      &kp P     &kp LBKT   &kp RBKT       &lt 5 BSLH
@@ -136,7 +135,6 @@
        };
 
         jis_layer {
-           label = "JIS";
            bindings = <
 &kp CAPS       &kp N1    &mo2       &kp N3     &kp N4     &kp N5       &mo6      &mo7       &mo8       &mo9       &mo0      &moMINUS   &moEQUAL        &kp BKSP
 &toJIS 1 TAB   &kp Q     &kp W      &kp E      &kp R      &kp T        &kp Y     &kp U      &kp I      &kp O      &kp P     &moLBKT    &moRBKT         &lt 5 INT3
@@ -147,7 +145,6 @@
        };
 
        function_layer {
-           label = "Func";
            bindings = <
 &moGRAVE      &kp F1     &kp F2     &kp F3     &kp F4     &kp F5       &kp F6    &kp F7     &kp F8     &kp F9     &kp F10   &kp F11    &kp F12         &trans
 &trans        &kp PG_UP  &kp UP     &kp PG_DN  &kp HOME   &trans       &trans    &trans     &trans     &trans     &trans    &trans     &trans          &kp PSCRN
@@ -158,8 +155,6 @@
        };
 
        mouse_layer {
-           display-name = "MOUSE";    
-           label = "MOUSE";
            bindings = <
 &trans        &trans     &trans     &trans     &trans     &trans       &trans    &trans     &trans     &trans     &trans    &trans     &trans          &trans
 &trans        &trans     &trans     &trans     &trans     &trans       &trans    &trans     &trans     &trans     &trans    &trans     &trans          &trans
@@ -170,8 +165,6 @@
        };
 
        scroll_layer {
-           display-name = "SCROLL";    
-           label = "SCROLL";
            bindings = <
 &trans        &trans     &trans     &trans     &trans     &trans       &trans    &trans     &trans     &trans     &trans    &trans     &trans          &trans
 &trans        &trans     &trans     &trans     &trans     &trans       &trans    &trans     &trans     &trans     &trans    &trans     &trans          &trans
@@ -182,8 +175,6 @@
        };
 
         bt_layer {
-           display-name = "BT";    
-           label = "BT";
            bindings = <
 &bt BT_CLR     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans
 &bt BT_CLR_ALL &trans       &trans       &trans       &trans       &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans              &trans
