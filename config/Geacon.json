@@ -1,6 +1,7 @@
 {
   "layouts": {
     "Default": {
+      "name": "default_layout",
       "layout": [
         { "x": 0.0, "y": 0.0 },
         { "x": 1.0, "y": 0.0 },
