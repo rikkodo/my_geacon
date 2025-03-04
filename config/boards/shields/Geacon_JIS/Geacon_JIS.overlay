@@ -1,7 +1,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
-#include "geacon_pinctrl.dtsi"
+#include "Geacon_pinctrl.dtsi"
 #include "geacon.dtsi"
 
 &spi0 {
